@@ -1,25 +1,13 @@
 .header {
-  // padding: 0em 1em 0em 1em;
   text-align: center;
-
   background-image: url(/images/bg-header-mobile.png);
   background-repeat: no-repeat;
   background-size: 100%;
-
-  .logo {
-    margin-top: 7em;
-    margin-bottom: 3em;
-  }
-
-  p {
-    margin-top: 1em;
-  }
 
   .buttons {
     display: flex;
     flex-direction: column;
     gap: 1.5em;
-    padding-top: 2em;
     margin-top: 0.5em;
   }
 }

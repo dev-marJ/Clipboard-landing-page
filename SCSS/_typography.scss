@@ -1,4 +1,17 @@
-body {
+@use "variables";
+
+body, button {
   font-family: "Bai Jamjuree", sans-serif;
-  font-size: 1.125rem;
+  // font-size: 1.125rem;
+
+  
+}
+
+p {
+  line-height: 1.5rem;
+  color: variables.$Neutral-Grayish-Blue;
+}
+
+h1, h2, h3 {
+  color: variables.$Neutral-Dark-Grayish-Blue;
 }

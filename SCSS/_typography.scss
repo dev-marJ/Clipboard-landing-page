@@ -1,10 +1,9 @@
 @use "variables";
 
-body, button {
+body,
+button {
   font-family: "Bai Jamjuree", sans-serif;
   // font-size: 1.125rem;
-
-  
 }
 
 p {
@@ -12,10 +11,18 @@ p {
   color: variables.$Neutral-Grayish-Blue;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: variables.$Neutral-Dark-Grayish-Blue;
 }
 
 h3 {
   font-size: 1.35rem;
+}
+
+footer {
+  a {
+    color: variables.$Neutral-Grayish-Blue;
+  }
 }

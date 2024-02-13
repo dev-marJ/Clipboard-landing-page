@@ -6,7 +6,19 @@
   box-sizing: border-box;
 }
 
-body, button {
+ul li {
+  list-style-type: none;
+}
+
+a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
+}
+
+body,
+button {
   font-family: "Bai Jamjuree", sans-serif;
 }
 
@@ -15,12 +27,18 @@ p {
   color: hsl(201, 11%, 66%);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: hsl(210, 10%, 33%);
 }
 
 h3 {
   font-size: 1.35rem;
+}
+
+footer a {
+  color: hsl(201, 11%, 66%);
 }
 
 header,
@@ -60,7 +78,8 @@ h3 {
   background-repeat: no-repeat;
   background-size: 100%;
 }
-.header .buttons {
+
+.buttons {
   display: flex;
   flex-direction: column;
   gap: 1.5em;
@@ -112,6 +131,47 @@ main {
 
 .benefits-container {
   margin-top: 2em;
+}
+
+.brands {
+  padding-top: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.brands img {
+  max-width: 150px;
+}
+
+footer {
+  margin-top: 10em;
+  background-color: rgba(174, 185, 191, 0.1176470588);
+  padding-top: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-img-container img {
+  max-width: 50px;
+}
+
+.footer-links ul {
+  margin-top: 2.5em;
+}
+.footer-links li,
+.footer-links a {
+  padding-bottom: 1.5em;
+  color: hsl(210, 10%, 33%);
+}
+
+.socials-container {
+  display: flex;
+  gap: 2em;
+  margin-top: 2em;
+  margin-bottom: 3em;
 }
 
 /*# sourceMappingURL=main.css.map */

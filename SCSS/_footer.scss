@@ -1,0 +1,38 @@
+@use "variables";
+
+footer {
+    margin-top: 10em;
+  background-color: #aeb9bf1e;
+  padding-top: 3em;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-img-container {
+  img {
+    max-width: 50px;
+  }
+}
+
+.footer-links {
+  ul {
+    margin-top: 2.5em;
+  }
+
+  li,
+  a {
+    padding-bottom: 1.5em;
+    color: variables.$Neutral-Dark-Grayish-Blue;
+  }
+}
+
+
+.socials-container {
+    display: flex;
+    gap: 2em;
+    margin-top: 2em;
+    margin-bottom: 3em;
+}

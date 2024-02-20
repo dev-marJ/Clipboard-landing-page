@@ -1,6 +1,7 @@
 @use "variables";
 
 button {
+  cursor: pointer;
   padding: 1em;
   border-radius: 30px;
   border: none;
@@ -9,13 +10,28 @@ button {
   color: white;
   font-size: 1.05rem;
   font-weight: 600;
-  
+  // width: 96%;
+  // align-self: center;
+
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
+
+
 
 .ios-btn {
   background-color: variables.$Primary-Strong-Cyan;
+  border-bottom: 3px solid hsl(171, 75%, 32%);
+}
+
+.ios-btn:hover {
+  background-color: variables.$Primary-Strong-Cyan-Hover;
 }
 
 .mac-btn {
   background-color: variables.$Primary-Light-Blue;
+  border-bottom: 3px solid hsl(233, 55%, 45%);
+}
+
+.mac-btn:hover {
+  background-color: variables.$Primary-Light-Blue-Hover;
 }

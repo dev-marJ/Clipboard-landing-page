@@ -1,7 +1,14 @@
 header,
 main,
-footer {
-  padding: 0em 1.5em 0em 1.5em;
+.footer-width-container {
+  margin: 0em 1.5em 0em 1.5em;
+  border: 3px solid red;
+}
+
+header, main, .footer-width-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  // border: 2px solid red;
 }
 
 .logo {

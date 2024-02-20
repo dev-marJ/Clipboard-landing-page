@@ -1,8 +1,15 @@
 .header {
   text-align: center;
+  // background-image: url(/images/bg-header-mobile.png);
+  // background-repeat: no-repeat;
+  // background-size: 100%;
+}
+
+.container {
   background-image: url(/images/bg-header-mobile.png);
   background-repeat: no-repeat;
   background-size: 100%;
+  
 }
 
 .buttons {
@@ -11,3 +18,4 @@
   gap: 1.5em;
   margin-top: 0.5em;
 }
+

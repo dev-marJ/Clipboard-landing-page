@@ -1,0 +1,201 @@
+// @media only screen and (max-width: 1264px) and (orientation: landscape) {
+//   .buttons {
+//     flex-direction: row;
+//     justify-content: center;
+
+//     button {
+//         padding: 1em 2.5em 1em 2.5em;
+//     }
+//   }
+
+//   .header {
+//     background-image: url(/images/bg-header-desktop.png);
+//   }
+// }
+
+@media only screen and (min-width: 500px) {
+  .buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  button {
+    padding: 1em 2.5em 1em 2.5em;
+  }
+
+  .container {
+    background-image: url(/images/bg-header-desktop.png);
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .brands {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 630px) {
+  .title-with-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      // max-width: 45%;
+      // margin: 0 auto;
+      max-width: 660px;
+    }
+  }
+
+  .keep-track {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      max-width: 700px;
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  h3 {
+    font-size: 1.35rem;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  body {
+    font-size: 1.125rem;
+  }
+
+  .imac-img-h3-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 4em;
+
+    .imac-img-container {
+      width: 45%;
+      align-self: center;
+      justify-self: center;
+    }
+  }
+
+  .benefits-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .benetifs-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      max-width: 400px;
+    }
+  }
+
+  .h3-container {
+    width: 30%;
+  }
+
+  .footer {
+    // border: 3px solid orange;
+  }
+  .footer-width-container {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding: 1em;
+
+    // border: 2px solid red;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .footer-links {
+      display: flex;
+      // align-items: center;
+      padding-bottom: 0em;
+      gap: 3em;
+    }
+
+    div {
+      a {
+        padding-bottom: 0em;
+      }
+    }
+
+    .socials-container {
+      // border: 2px solid red;
+      align-self: center;
+      justify-self: center;
+      margin-bottom: 0em;
+    }
+  }
+
+  .footer-img-container {
+    padding-bottom: 0em;
+    margin-bottom: 0em;
+    display: flex;
+    gap: 5em;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .benefits-container {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 1023px) {
+  .brands {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .footer-links {
+    div {
+      a {
+        font-weight: 400;
+      }
+    }
+  }
+
+  .footer-width-container {
+    padding-right: 0em;
+    padding-left: 0em;
+  }
+}
+
+@media only screen and (min-width: 1281px) {
+  .imac-img-h3-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 5em;
+    width: 100%;
+    margin-top: 1em;
+    .imac-img-container {
+      width: 50%;
+    }
+  }
+
+  .h3-container {
+    padding-top: 2.5em;
+    p,
+    h3 {
+      text-align: left;
+    }
+  }
+
+  p {
+    line-height: 1.8rem;
+  }
+}
+
+@media only screen and (min-width: 1023px) {
+  .blacklist-svg {
+    width: 36px;
+  }
+}

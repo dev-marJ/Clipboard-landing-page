@@ -33,18 +33,20 @@ h3 {
   color: hsl(210, 10%, 33%);
 }
 
-h3 {
-  font-size: 1.35rem;
-}
-
 footer a {
   color: hsl(201, 11%, 66%);
 }
 
 header,
 main,
-footer {
-  padding: 0em 1.5em 0em 1.5em;
+.footer-width-container {
+  margin: 0em 1.5em 0em 1.5em;
+  border: 3px solid red;
+}
+
+header, main, .footer-width-container {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .logo {
@@ -74,6 +76,9 @@ h3 {
 
 .header {
   text-align: center;
+}
+
+.container {
   background-image: url(/images/bg-header-mobile.png);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -87,6 +92,7 @@ h3 {
 }
 
 button {
+  cursor: pointer;
   padding: 1em;
   border-radius: 30px;
   border: none;
@@ -94,14 +100,25 @@ button {
   color: white;
   font-size: 1.05rem;
   font-weight: 600;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
 
 .ios-btn {
   background-color: hsl(171, 66%, 44%);
+  border-bottom: 3px solid hsl(171, 75%, 32%);
+}
+
+.ios-btn:hover {
+  background-color: hsla(171, 66%, 44%, 0.808);
 }
 
 .mac-btn {
   background-color: hsl(233, 100%, 69%);
+  border-bottom: 3px solid hsl(233, 55%, 45%);
+}
+
+.mac-btn:hover {
+  background-color: hsla(233, 100%, 69%, 0.76);
 }
 
 main {
@@ -137,41 +154,212 @@ main {
   padding-top: 2em;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  gap: 1em;
   align-items: center;
 }
 .brands img {
   max-width: 150px;
 }
 
+.card {
+  max-width: 370px;
+  margin: 0 auto;
+}
+
+.access-clipboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.access-clipboard p {
+  max-width: 700px;
+  text-align: center;
+}
+
 footer {
-  margin-top: 10em;
   background-color: rgba(174, 185, 191, 0.1176470588);
+}
+
+.footer-width-container {
+  margin-top: 10em;
   padding-top: 3em;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  justify-content: center;
 }
 
+.footer-img-container {
+  padding-bottom: 3em;
+}
 .footer-img-container img {
   max-width: 50px;
 }
 
-.footer-links ul {
-  margin-top: 2.5em;
+.footer-links {
+  padding-bottom: 1em;
 }
-.footer-links li,
-.footer-links a {
-  padding-bottom: 1.5em;
-  color: hsl(210, 10%, 33%);
+.footer-links div {
+  display: flex;
+  flex-direction: column;
+}
+.footer-links div a {
+  padding-bottom: 2em;
+  font-weight: 600;
 }
 
 .socials-container {
   display: flex;
   gap: 2em;
-  margin-top: 2em;
   margin-bottom: 3em;
+}
+
+@media only screen and (min-width: 500px) {
+  .buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+  button {
+    padding: 1em 2.5em 1em 2.5em;
+  }
+  .container {
+    background-image: url(/images/bg-header-desktop.png);
+  }
+}
+@media only screen and (min-width: 601px) {
+  .brands {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 630px) {
+  .title-with-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .title-with-text p {
+    max-width: 660px;
+  }
+  .keep-track {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .keep-track p {
+    max-width: 700px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  h3 {
+    font-size: 1.35rem;
+  }
+}
+@media only screen and (min-width: 700px) {
+  body {
+    font-size: 1.125rem;
+  }
+  .imac-img-h3-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 4em;
+  }
+  .imac-img-h3-container .imac-img-container {
+    width: 45%;
+    align-self: center;
+    justify-self: center;
+  }
+  .benefits-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .benetifs-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .benetifs-item p {
+    max-width: 400px;
+  }
+  .h3-container {
+    width: 30%;
+  }
+  .footer-width-container {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding: 1em;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-width-container .footer-links {
+    display: flex;
+    padding-bottom: 0em;
+    gap: 3em;
+  }
+  .footer-width-container div a {
+    padding-bottom: 0em;
+  }
+  .footer-width-container .socials-container {
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 0em;
+  }
+  .footer-img-container {
+    padding-bottom: 0em;
+    margin-bottom: 0em;
+    display: flex;
+    gap: 5em;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .benefits-container {
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 1023px) {
+  .brands {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .footer-links div a {
+    font-weight: 400;
+  }
+  .footer-width-container {
+    padding-right: 0em;
+    padding-left: 0em;
+  }
+}
+@media only screen and (min-width: 1281px) {
+  .imac-img-h3-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 5em;
+    width: 100%;
+    margin-top: 1em;
+  }
+  .imac-img-h3-container .imac-img-container {
+    width: 50%;
+  }
+  .h3-container {
+    padding-top: 2.5em;
+  }
+  .h3-container p,
+  .h3-container h3 {
+    text-align: left;
+  }
+  p {
+    line-height: 1.8rem;
+  }
+}
+@media only screen and (min-width: 1023px) {
+  .blacklist-svg {
+    width: 36px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

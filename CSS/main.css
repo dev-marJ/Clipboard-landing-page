@@ -40,11 +40,12 @@ footer a {
 header,
 main,
 .footer-width-container {
-  margin: 0em 1.5em 0em 1.5em;
-  border: 3px solid red;
+  padding: 0em 1.5em 0em 1.5em;
 }
 
-header, main, .footer-width-container {
+header,
+main,
+.footer-width-container {
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -208,11 +209,17 @@ footer {
   padding-bottom: 2em;
   font-weight: 600;
 }
+.footer-links div a:hover {
+  color: hsl(171, 66%, 44%);
+}
 
 .socials-container {
   display: flex;
   gap: 2em;
   margin-bottom: 3em;
+}
+.socials-container img:hover {
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 500px) {
@@ -288,31 +295,38 @@ footer {
     width: 30%;
   }
   .footer-width-container {
-    padding-top: 1em;
-    padding-bottom: 1em;
-    padding: 1em;
+    padding-top: 2em;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
   }
   .footer-width-container .footer-links {
     display: flex;
     padding-bottom: 0em;
-    gap: 3em;
+    gap: 2em;
   }
   .footer-width-container div a {
-    padding-bottom: 0em;
+    padding-bottom: 0.7em;
+    text-align: left;
   }
   .footer-width-container .socials-container {
     align-self: center;
     justify-self: center;
     margin-bottom: 0em;
+    padding-bottom: 1em;
   }
   .footer-img-container {
     padding-bottom: 0em;
     margin-bottom: 0em;
     display: flex;
     gap: 5em;
+  }
+  .footer-img-container img {
+    padding-bottom: 0.8em;
+  }
+  footer {
+    padding-bottom: 0.6em;
+    padding-right: 1.2em;
+    padding-left: 1.2em;
   }
 }
 @media only screen and (max-width: 1023px) {
@@ -326,12 +340,11 @@ footer {
     justify-content: space-between;
     flex-wrap: wrap;
   }
+  .footer-links {
+    margin-right: 10em;
+  }
   .footer-links div a {
     font-weight: 400;
-  }
-  .footer-width-container {
-    padding-right: 0em;
-    padding-left: 0em;
   }
 }
 @media only screen and (min-width: 1281px) {

@@ -28,11 +28,15 @@ footer {
   div {
     display: flex;
     flex-direction: column;
-    
-      a {
-        padding-bottom: 2em;
-        font-weight: 600;
-      }
+
+    a {
+      padding-bottom: 2em;
+      font-weight: 600;
+    }
+
+    a:hover {
+      color: variables.$Primary-Strong-Cyan;
+    }
   }
 }
 
@@ -40,4 +44,8 @@ footer {
   display: flex;
   gap: 2em;
   margin-bottom: 3em;
+
+  img:hover {
+    cursor: pointer;
+  }
 }
